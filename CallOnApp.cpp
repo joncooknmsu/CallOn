@@ -12,7 +12,7 @@ bool CallOnApp::rateStudent(int rating)
     }
     curStudent->countResponse(rating);
     roster.callOccurred();
-    calleeName->value("   processed!");
+    calleeName->value("      processed!");
     //roster.saveRoster("roster.csv");
     roster.saveRoster();
     curStudent = 0;
@@ -36,6 +36,7 @@ void CallOnApp::createWindow(int argc, char* argv[])
     calleeName->textsize(28);
     nextCallee = new NewStudentButton(this, 125, 100, 150, 40, "Next Callee");
     nextCallee->labelsize(24);
+    /*** remove 4-button UI and replace it with just two
     notHere = new RatingButton(this, 0, 30, 170, 150, 40, "Not Here");
     notHere->labelsize(24);
     goodEffort = new RatingButton(this, 3, 220, 170, 150, 40, "Good Effort");
@@ -44,6 +45,11 @@ void CallOnApp::createWindow(int argc, char* argv[])
     weakEffort->labelsize(24);
     sosoEffort = new RatingButton(this, 2, 220, 240, 150, 40, "SoSo Effort");
     sosoEffort->labelsize(24);
+    ***/
+    goodEffort = new RatingButton(this, 3, 30, 170, 330, 40, "I'm good on that topic!");
+    goodEffort->labelsize(24);
+    weakEffort = new RatingButton(this, 1, 30, 240, 330, 40, "I need to study that more");
+    weakEffort->labelsize(24);
     // declare the drawing area to be resizable
     // mainWindow.resizable(drawer);
     // end window sub-components
