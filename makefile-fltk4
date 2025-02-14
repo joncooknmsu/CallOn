@@ -1,0 +1,18 @@
+#
+# makefile for FLTK 1.4
+# - todo: font in UI looks bad!
+#
+CC = gcc
+C++ = g++
+
+# installation home for fltk 1.4
+FLTK = /home/jcook/tools
+
+CXXFLAGS = -Wall -g -I$(FLTK)/include
+LDLIBS = -L$(FLTK)/lib -lfltk -lstdc++ -lm -ldl -lX11 -lpthread -lXft -lfontconfig -lXrender -lfreetype
+
+callon: callon.o CallOnApp.o Buttons.o Roster.o Student.o
+
+clean:
+	rm *.o
+	rm callon

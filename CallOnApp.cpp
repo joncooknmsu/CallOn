@@ -33,6 +33,7 @@ void CallOnApp::createWindow(int argc, char* argv[])
     begin();
     calleeName = new Fl_Output(30, 20, 340, 50, 0);
     calleeName->value("   choose next");
+    calleeName->textfont(FL_HELVETICA_BOLD);
     calleeName->textsize(28);
     nextCallee = new NewStudentButton(this, 125, 100, 150, 40, "Next Callee");
     nextCallee->labelsize(24);
