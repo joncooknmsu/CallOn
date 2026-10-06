@@ -21,4 +21,3 @@ int NewStudentButton::handle(int event)
     app->selectNewStudent();
     return 1; // 1 indicates we handled it
 }
-

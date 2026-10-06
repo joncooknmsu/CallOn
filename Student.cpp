@@ -1,5 +1,5 @@
 //
-// Student class 
+// Student class
 //
 #include "Student.h"
 #include <sstream>
@@ -36,7 +36,7 @@ int Student::calls() const
 const std::string Student::saveString() const
 {
     return name + "," + std::to_string(calledOnCount) + "," +
-        std::to_string(numAbsences) + "," + std::to_string(avgScore);
+           std::to_string(numAbsences) + "," + std::to_string(avgScore);
 }
 bool Student::countResponse(int response)
 {
@@ -46,6 +46,6 @@ bool Student::countResponse(int response)
         return true;
     }
     double oldTotal = avgScore * (calledOnCount - 1);
-    avgScore = (oldTotal + response) / (double) calledOnCount;
+    avgScore = (oldTotal + response) / (double)calledOnCount;
     return true;
 }

@@ -49,7 +49,8 @@ void CallOnApp::createWindow(int argc, char* argv[])
     ***/
     goodEffort = new RatingButton(this, 3, 30, 170, 330, 40, "got an answer");
     goodEffort->labelsize(24);
-    weakEffort = new RatingButton(this, 1, 30, 240, 330, 40, "student not here");
+    weakEffort =
+          new RatingButton(this, 1, 30, 240, 330, 40, "student not here");
     weakEffort->labelsize(24);
     // declare the drawing area to be resizable
     // mainWindow.resizable(drawer);

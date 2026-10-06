@@ -40,7 +40,7 @@ Student* Roster::selectStudent()
             totalCalls += ccount;
         }
         maxCalls++; // so that max can be selected too
-        callOnSequence = new int[roster.size()+1];
+        callOnSequence = new int[roster.size() + 1];
         for (unsigned int i = 0; i < roster.size(); i++) {
             int r;
             do {
@@ -60,7 +60,7 @@ Student* Roster::selectStudent()
                     selValue -= maxCalls - student->calls();
                     r++;
                 }
-                if (r >= (int) roster.size())
+                if (r >= (int)roster.size())
                     r = roster.size() - 1;
                 //std::cerr << "Selected r: " << r << "\n";
                 for (unsigned int j = 0; j < i; j++) {
@@ -106,7 +106,10 @@ Student* Roster::selectStudent()
     return 0;
 }
 
-void Roster::callOccurred() { totalCalls++; }
+void Roster::callOccurred()
+{
+    totalCalls++;
+}
 
 void Roster::saveRoster(const std::string& filename) const
 {
