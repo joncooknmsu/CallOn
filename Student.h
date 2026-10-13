@@ -12,14 +12,15 @@
 
 class Student
 {
-public:
+ public:
     Student(const std::string dataString);
     bool selected(int selValue) const;
     const std::string displayString() const;
     int calls() const;
     const std::string saveString() const;
     bool countResponse(int response);
-private:
+
+ private:
     std::string name;
     int calledOnCount;
     int numAbsences;
