@@ -1,6 +1,6 @@
 #include "CallOnApp.h"
 #include "Roster.h"
-#include "callon.xpm"
+#include "callicon.xpm"
 #include <FL/Fl_Pixmap.H>
 #include <FL/Fl_RGB_Image.H>
 
@@ -57,7 +57,7 @@ void CallOnApp::createWindow(int argc, char* argv[])
     // end window sub-components
     end();
     // set window icon?
-    Fl_Pixmap callon_xpm_icon(callon_xpm);
+    Fl_Pixmap callon_xpm_icon(callicon_xpm);
     Fl_RGB_Image callon_icon(&callon_xpm_icon, Fl_Color(0));
     icon(&callon_icon);
     xclass("CallOn");

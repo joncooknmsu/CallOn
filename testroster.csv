@@ -1,9 +1,9 @@
 Student,Calls,Absences,AvgScore
-John Wayne,4,1,1.000000
-Rex Allen,3,0,0.000000
-Majel Barrett,2,0,2.000000
+John Wayne,6,1,1.333333
+Rex Allen,4,0,0.250000
+Majel Barrett,3,0,1.666667
 Johnny Carson,5,0,0.400000
 Lucille Ball,7,0,0.857143
-Denzel Washinton,6,0,0.000000
-Tom Hanks,1,0,1.000000
-Angelina Jolie,1,0,3.000000
+Denzel Washinton,7,0,0.142857
+Tom Hanks,3,0,2.333333
+Angelina Jolie,2,0,3.000000

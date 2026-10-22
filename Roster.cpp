@@ -136,11 +136,13 @@ bool Roster::loadFile(const std::string& filename)
         // std::cout << "line is [" << line << "]\n";
         if (line.length() < 2)
             continue; // probably at end of file
+        /**
         std::istringstream ss(line);
         std::string piece;
         while (std::getline(ss, piece, ',')) {
             // std::cout << "  piece [" << piece << "]\n";
         }
+        **/
         if (isFirstLine) {
             isFirstLine = false;
             continue;
