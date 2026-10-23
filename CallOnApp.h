@@ -15,7 +15,7 @@ class CallOnApp : public Fl_Window
  public:
     CallOnApp(Roster& roster)
           : // create a GUI window object
-            Fl_Window(400, 300, "Call On Me!"), roster(roster)
+            Fl_Window(400, 220, "Call On Me!"), roster(roster)
     {
         curStudent = 0;
     }
